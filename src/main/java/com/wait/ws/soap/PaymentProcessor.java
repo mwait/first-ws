@@ -1,9 +1,16 @@
 package com.wait.ws.soap;
 
+import javax.jws.WebParam;
+import javax.jws.WebResult;
+import javax.jws.WebService;
+
 import com.wait.ws.soap.dto.PaymentProcessorRequest;
 import com.wait.ws.soap.dto.PaymentProcessorResponse;
 
+@WebService(name = "PaymentProcessor")
 public interface PaymentProcessor {
 
-	public PaymentProcessorResponse processPayment(PaymentProcessorRequest paymentProcessorRequest);
+	
+	public @WebResult(name = "response") PaymentProcessorResponse processPayment(
+			@WebParam(name = "paymentProcessorRequest") PaymentProcessorRequest paymentProcessorRequest);
 }
