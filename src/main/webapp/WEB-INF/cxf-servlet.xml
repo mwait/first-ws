@@ -10,6 +10,13 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd">
 
+<!-- id identyfikuje beana w springu -->
+<jaxws:server id="paymentService" serviceClass="com.wait.ws.soap.PaymentProcessor" address="/paymentProcessor">
+<jaxws:serviceBean>
+<bean class="com.wait.ws.soap.PaymentProcessorImpl"/>
+</jaxws:serviceBean>
+
+</jaxws:server>
 
 
 <core:bus>
