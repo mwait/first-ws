@@ -33,6 +33,15 @@
   </build>
   
   <dependencies>
+  
+  <!-- do UTPasswordCallback -->
+ <dependency>
+	<groupId>org.apache.cxf</groupId>
+	<artifactId>cxf-rt-ws-security</artifactId>
+	<version>3.0.5</version>
+ </dependency>
+
+
   <dependency>
   <groupId>org.apache.cxf</groupId>
   <artifactId>cxf-rt-frontend-jaxws</artifactId>
