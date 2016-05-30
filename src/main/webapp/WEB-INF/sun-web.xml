@@ -3,5 +3,5 @@
 Application Server 9.0 Servlet 2.5//EN' 
 'http://www.sun.com/software/appserver/dtds/sun-web-app_2_5-0.dtd'> 
 <sun-web-app> 
-<class-loader delegate="false"/> 
+<class-loader delegate="true"/> 
 </sun-web-app>

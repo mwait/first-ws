@@ -33,3 +33,8 @@
       </soap:processPayment>
    </soapenv:Body>
 </soapenv:Envelope>
+
+
+glassfish metro
+generowanie klas w wsdla
+wsimport -keep -d /Users/name/Documents/ http://localhost:8080/first-ws/services?wsdl

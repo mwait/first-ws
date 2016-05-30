@@ -35,24 +35,13 @@
   <dependencies>
   
   <!-- do UTPasswordCallback -->
- <dependency>
-	<groupId>org.apache.cxf</groupId>
-	<artifactId>cxf-rt-ws-security</artifactId>
-	<version>3.0.5</version>
- </dependency>
-
-
   <dependency>
-  <groupId>org.apache.cxf</groupId>
-  <artifactId>cxf-rt-frontend-jaxws</artifactId>
-  <version>3.0.3</version>
-  </dependency>
+            <groupId>org.glassfish.metro</groupId>
+            <artifactId>webservices-rt</artifactId>
+            <version>2.3</version>
+        </dependency>
   
-  <dependency>
-  <groupId>org.apache.cxf</groupId>
-  <artifactId>cxf-rt-transports-http</artifactId>
-  <version>3.0.3</version>
-  </dependency>
+
   
   <dependency>
   <groupId>org.springframework</groupId>
